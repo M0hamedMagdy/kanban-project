@@ -1,0 +1,51 @@
+/* Style for the board */
+.board {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  height: 100vh;
+}
+
+/* Style for each list */
+.list {
+  border: 1px solid black;
+  width: 30%;
+  padding: 10px;
+  background-color: #fff;
+  height: 90%;
+  overflow-y: auto; /* Add a scrollbar if the content exceeds the list's height */
+}
+
+.list h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Style for each task within a list */
+.task {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.task div {
+  order: 1;
+  align-self: baseline;
+}
+
+.task .buttons {
+  align-self: end;
+}
+.task button {
+  order: 2;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+  color: black;
+  font-size: 1.5em;
+}
